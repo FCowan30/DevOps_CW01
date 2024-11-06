@@ -18,7 +18,7 @@ public static int Arg1;
         String hexadecimal="";
         
         // check for input
-        if (Arg1.length == 0){
+        if (args.length == 0){
             System.out.println("No input Detected");
             System.exit(1);
         }
