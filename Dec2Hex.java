@@ -9,11 +9,15 @@ public static int Arg1;
         //checks for valid integers as inputs
         try {
             Arg1 = Integer.parseInt(args[0]);
-            logger.info("Integer Detected");
+            if (logger.isLoggable(level.INFO)){
+                logger.info("Integer Detected");
+             }
         } catch (NumberFormatException e) {
-            logger.severe(String.format("The input: '%s' is not a valid integer", args[0]));
+           if (logger.isloggable(Level.SEVERE)) {
+                logger.severe(String.format("The input: '%s' is not a valid integer", args[0]));
+           }
+          System.exit(1)
         }
-        
         char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
         int rem, num;
         num = Arg1;
@@ -24,18 +28,18 @@ public static int Arg1;
             logger.severe("No input Detected");
             System.exit(1);
         }
-        
-        logger.info(String.format("Converting the Decimal Value %d to Hex...", num));
-
+        if (logger.isLoggable(Level.INFO)) {
+            logger.info(String.format("Converting the Decimal Value %d to Hex...", num));
+        }
         while(num != 0)
         {
             rem=num%16;
             hexadecimal= ch[rem] + hexadecimal;
             num= num/16;
         }
-
-        logger.info(String.format("Hexadecimal representation is:  %s", hexadecimal));
-
+         if (logger.isLoggable(Level.INFO)) {
+             logger.info(String.format("Hexadecimal representation is:  %s", hexadecimal));
+          }
     }
 }
 
