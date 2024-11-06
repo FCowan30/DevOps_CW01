@@ -5,8 +5,15 @@ class Dec2Hex
 {
 public static int Arg1;
     public static void main(String args[])    {
-        Arg1 = Integer.parseInt(args[0]);
+        try {
+             Arg1 = Integer.parseInt(args[0]);
+        }catch (NumberformatException e) {
+            System.out.println("Invalid Input");
+            return;
+        }
+        
         char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+        
         int rem, num;
         num = Arg1;
         String hexadecimal="";
@@ -18,8 +25,10 @@ public static int Arg1;
             hexadecimal= ch[rem] + hexadecimal;
             num= num/16;
         }
+        if (hexadecimal.isEmpty()) {
+            hexadecimal = "0";
+        }
 
         System.out.println("Hexadecimal representation is: " + hexadecimal);
-        System.out.println("Hello World");
     }
 }
