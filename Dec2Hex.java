@@ -11,7 +11,7 @@ public static int Arg1;
             Arg1 = Integer.parseInt(args[0]);
             logger.info("Integer Detected");
         } catch (NumberFormatException e) {
-            logger.severe("The input:" + Arg1 + " is not a valid integer");
+            logger.severe(String.format("The input: '%s' is not a valid integer", args[0]));
         }
         
         char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
@@ -25,7 +25,7 @@ public static int Arg1;
             System.exit(1);
         }
         
-        logger.info(String.format("Converting the Decimal Value " + num + " to Hex..."));
+        logger.info(String.format("Converting the Decimal Value %d to Hex...", num));
 
         while(num != 0)
         {
@@ -34,7 +34,7 @@ public static int Arg1;
             num= num/16;
         }
 
-        logger.info(String.format("Hexadecimal representation is: " + hexadecimal));
+        logger.info(String.format("Hexadecimal representation is:  %s", hexadecimal));
 
     }
 }
