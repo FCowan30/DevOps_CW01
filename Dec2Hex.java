@@ -1,13 +1,17 @@
+import java.util.logging.logger;
+
 class Dec2Hex
 {
+private static final logger logger = logger.getLogger(Dec2Hex.class.getName());
+
 public static int Arg1;
     public static void main(String args[])    {
         //checks for valid integers as inputs
         try {
             Arg1 = Integer.parseInt(args[0]);
-            System.out.println("Integer Detected");
+            logger.info("Integer Detected");
         } catch (NumberFormatException e) {
-            System.out.println("The input:" + Arg1 + " is not a valid integer");
+            logger.severe("The input:" + Arg1 + " is not a valid integer");
         }
         
         char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
@@ -17,11 +21,11 @@ public static int Arg1;
         
         // check for input
         if (args.length == 0){
-            System.out.println("No input Detected");
+            logger.serere("No input Detected");
             System.exit(1);
         }
         
-        System.out.println("Converting the Decimal Value " + num + " to Hex...");
+        logger.info("Converting the Decimal Value " + num + " to Hex...");
 
         while(num != 0)
         {
@@ -30,7 +34,7 @@ public static int Arg1;
             num= num/16;
         }
 
-        System.out.println("Hexadecimal representation is: " + hexadecimal);
+        logger.info("Hexadecimal representation is: " + hexadecimal);
 
     }
 }
