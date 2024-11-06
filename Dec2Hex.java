@@ -24,7 +24,7 @@ public static int Arg1;
         int rem;
         int num;
         num = Arg1;
-        String hexadecimal="";
+        StringBuilder hexadecimal = new Stringbuilder();
         
         // check for input
         if (args.length == 0){
@@ -37,11 +37,11 @@ public static int Arg1;
         while(num != 0)
         {
             rem=num%16;
-            hexadecimal= ch[rem] + hexadecimal;
+            hexadecimal.insert(0, ch[rem]);
             num= num/16;
         }
          if (logger.isLoggable(Level.INFO)) {
-             logger.info(String.format("Hexadecimal representation is:  %s", hexadecimal));
+             logger.info(String.format("Hexadecimal representation is:  %s", hexadecimal.toString()));
           }
     }
 }
