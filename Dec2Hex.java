@@ -21,7 +21,7 @@ public static int Arg1;
         
         // check for input
         if (args.length == 0){
-            logger.serere("No input Detected");
+            logger.severe("No input Detected");
             System.exit(1);
         }
         
