@@ -11,11 +11,11 @@ public static int Arg1;
         //checks for valid integers as inputs
         try {
             Arg1 = Integer.parseInt(args[0]);
-            if (logger.isLoggable(level.INFO)){
+            if (logger.isLoggable(Level.INFO)){
                 logger.info("Integer Detected");
              }
         } catch (NumberFormatException e) {
-           if (logger.isloggable(Level.SEVERE)) {
+           if (logger.isLoggable(Level.SEVERE)) {
                 logger.severe(String.format("The input: '%s' is not a valid integer", args[0]));
            }
           System.exit(1);
