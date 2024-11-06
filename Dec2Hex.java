@@ -24,7 +24,7 @@ public static int Arg1;
         int rem;
         int num;
         num = Arg1;
-        StringBuilder hexadecimal = new Stringbuilder();
+        StringBuilder hexadecimal = new StringBuilder();
         
         // check for input
         if (args.length == 0){
