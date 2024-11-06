@@ -1,8 +1,8 @@
-import java.util.logging.logger;
+import java.util.logging.Logger;
 
 class Dec2Hex
 {
-private static final logger logger = logger.getLogger(Dec2Hex.class.getName());
+private static final Logger logger = Logger.getLogger(Dec2Hex.class.getName());
 
 public static int Arg1;
     public static void main(String args[])    {
