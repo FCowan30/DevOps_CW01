@@ -43,7 +43,7 @@ private static final Logger logger = Logger.getLogger(Dec2Hex.class.getName());
             num= num/16;
         }
          if (logger.isLoggable(Level.INFO)) {
-             logger.info(String.format("Test Hexadecimal representation is:  %s", hexadecimal.toString()));
+             logger.info(String.format("Hexadecimal representation is:  %s", hexadecimal.toString()));
           }
     }
 }
