@@ -7,7 +7,7 @@ class Dec2Hex
 private static final Logger logger = Logger.getLogger(Dec2Hex.class.getName());
 
 
-    public static void main(String args[])    {
+    public static void main(String[] args)    {
 
         final int Arg1;
 
