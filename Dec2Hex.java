@@ -1,8 +1,5 @@
 import java.util.logging.Level;
-
 import java.util.logging.Logger;
-
-package GCU.DevOps.Coursework_1
 
 class Dec2Hex
 {
