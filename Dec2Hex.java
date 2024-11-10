@@ -1,5 +1,3 @@
-package GCU.DevOps.CourseWork_1.DevOps_CW01main;
-
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -49,4 +47,3 @@ private static final Logger logger = Logger.getLogger(Dec2Hex.class.getName());
           }
     }
 }
-
