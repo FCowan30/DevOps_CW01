@@ -1,6 +1,7 @@
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+package GCU.DevOps.CourseWork_1;
 class Dec2Hex
 {
 private static final Logger logger = Logger.getLogger(Dec2Hex.class.getName());
