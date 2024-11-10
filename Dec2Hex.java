@@ -41,7 +41,7 @@ public static int Arg1;
             num= num/16;
         }
          if (logger.isLoggable(Level.INFO)) {
-             logger.info(String.format("Hexadecimal representation is:  %s", hexadecimal.toString()));
+             logger.info(String.format(" Test Hexadecimal representation is:  %s", hexadecimal.toString()));
           }
     }
 }
